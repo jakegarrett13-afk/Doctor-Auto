@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Doctor Auto | Las Vegas, NV</title>
+<meta name="description" content="Send Doctor Auto a message online, or call (702) 645-9934. Family-owned auto repair shop serving Las Vegas, North Las Vegas, and Henderson, NV.">
+<meta name="theme-color" content="#0b2545">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Doctor Auto home">
+      <img src="assets/logo.png" alt="Doctor Auto - Hometown Service With Integrity" class="logo-img" width="350" height="84">
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#coupons">Coupons</a></li>
+        <li><a href="car-care-club.html" class="nav-highlight">Car Care Club</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-call" href="tel:+17026459934" aria-label="Call Doctor Auto now at (702) 645-9934">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.7c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z" fill="currentColor"/></svg>
+        <span>Call Now</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- CONTACT HERO -->
+  <section class="club-hero">
+    <div class="club-hero-inner">
+      <h1>Send Us a Message</h1>
+      <p class="club-hero-sub">Have a question or want to schedule service? Fill out the form below and we'll get back to you, or call us directly:</p>
+      <a class="club-hero-phone" href="tel:+17026459934">(702) 645-9934</a>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="club-details">
+    <div class="section-inner club-details-inner">
+
+      <div class="contact-form-wrap">
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xaewrjky" method="POST">
+          <div class="form-row">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="cf-phone">Phone</label>
+            <input type="tel" id="cf-phone" name="phone" autocomplete="tel">
+          </div>
+          <div class="form-row">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" required></textarea>
+          </div>
+
+          <div class="form-honeypot" aria-hidden="true">
+            <label for="cf-company">Company</label>
+            <input type="text" id="cf-company" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <p class="club-back-link-wrap"><a class="club-back-link" href="index.html#contact">&larr; Back to contact &amp; location</a></p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-text">Doctor Auto</span>
+      <p>Family-owned auto repair shop</p>
+    </div>
+    <ul class="footer-contact">
+      <li><a href="tel:+17026459934">(702) 645-9934</a></li>
+      <li>Fax: (702) 395-3235</li>
+      <li><a href="https://maps.google.com/?q=6450+W+Craig+Rd,+Las+Vegas,+NV+89108" target="_blank" rel="noopener noreferrer">6450 W Craig Rd, Las Vegas, NV 89108</a></li>
+    </ul>
+    <p class="footer-copy">&copy; <span id="year"></span> Doctor Auto. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
