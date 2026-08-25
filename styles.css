@@ -320,17 +320,6 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 .contact-info > .btn { align-self: flex-start; }
 .contact-cta-row { display: flex; flex-wrap: wrap; gap: 1rem; }
 
-.social-links { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 2rem; }
-.social-links a {
-  display: inline-flex; align-items: center; gap: 0.6rem;
-  font-weight: 600; font-size: 0.95rem; color: var(--navy);
-  background: var(--bg-alt); border: 1px solid var(--border);
-  padding: 0.65rem 1rem; border-radius: 8px; width: fit-content;
-  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
-}
-.social-links a:hover { background: #fff; border-color: var(--blue); transform: translateY(-1px); }
-.social-links svg { color: var(--red); flex-shrink: 0; }
-
 .map-wrap {
   min-height: 320px; border-radius: var(--radius); overflow: hidden;
   box-shadow: var(--shadow); border: 1px solid var(--border);
@@ -370,13 +359,23 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 .site-footer { background: var(--navy-dark); color: #cbd5e1; padding: 3rem 1.5rem 2rem; }
 .footer-inner {
   max-width: 1120px; margin: 0 auto;
-  display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem;
+  display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 2rem;
 }
 .footer-brand .logo-text { color: #fff; }
 .footer-brand p { color: #94a3b8; margin: 0.25rem 0 0; }
 .footer-contact { display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.92rem; }
 .footer-contact a { color: #cbd5e1; }
 .footer-contact a:hover { color: #fff; text-decoration: underline; }
+.footer-social { display: flex; flex-direction: column; gap: 0.6rem; align-items: flex-start; }
+.footer-social a {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-size: 0.9rem; font-weight: 600; color: #cbd5e1;
+  border: 1px solid rgba(255,255,255,0.15); border-radius: 8px;
+  padding: 0.5rem 0.85rem;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.footer-social a:hover { color: #fff; border-color: #fff; }
+.footer-social svg { color: var(--red); flex-shrink: 0; }
 .footer-copy {
   grid-column: 1 / -1; margin: 1.5rem 0 0; padding-top: 1.5rem;
   border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: #94a3b8;
