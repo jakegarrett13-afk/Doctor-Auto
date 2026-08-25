@@ -192,7 +192,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 .promo-card {
   background: #fff; color: var(--text);
   border-radius: var(--radius); padding: 2.25rem;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow); min-width: 0;
 }
 .promo-card h3 { margin-bottom: 0.5rem; }
 .promo-card .promo-amount {
@@ -434,4 +434,8 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   .hours-card { padding: 1.25rem; }
   .hours-card h2 { font-size: 1rem; margin-bottom: 0.6rem; }
   .hours-row { padding: 0.3rem 0; font-size: 0.85rem; }
+
+  .promo-inner { padding: 3rem 1.25rem; }
+  .promo-card { padding: 1.5rem; }
+  .promo-card .btn { white-space: normal; text-align: center; }
 }
