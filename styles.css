@@ -102,9 +102,9 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 .header-actions { display: flex; align-items: center; gap: 1rem; }
 
 .menu-toggle {
-  display: none; flex-direction: column; justify-content: center; gap: 5px;
-  width: 40px; height: 40px; background: none; border: none; cursor: pointer;
-  padding: 0;
+  display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+  width: 48px; height: 48px; background: none; border: none; cursor: pointer;
+  padding: 0; -webkit-tap-highlight-color: rgba(11, 37, 69, 0.15);
 }
 .menu-toggle span {
   display: block; width: 24px; height: 2.5px; background: var(--navy);
@@ -412,9 +412,9 @@ p { margin: 0 0 1em; color: var(--text-muted); }
     border-bottom: 1px solid var(--border);
   }
   .menu-toggle { display: flex; }
-  .header-actions { gap: 0.5rem; }
+  .header-actions { gap: 0.75rem; }
   .btn-call span { display: none; }
-  .btn-call { padding: 0.6rem; border-radius: 50%; }
+  .btn-call { width: 44px; height: 44px; padding: 0; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; }
   .btn-call svg { margin: 0; }
   .logo-img { height: 34px; }
 }
